@@ -1,0 +1,16 @@
+$a:200px;
+.a{
+	background-color:blue;
+	height:300px;
+	width:$a;
+	.b{
+		background-color: red;
+		height:200px;
+		width:$a;
+		.c{
+			background-color: yellow;
+			height:100px;
+			width:$a;
+		}
+	}
+}
