@@ -63,21 +63,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/test.scss */
-.a {
-  background-color: blue;
-  height: 300px;
-  width: 200px;
+/* line 5, ../sass/test.scss */
+body {
+  width: 80%;
+  height: 100%;
+  border: 1px solid red;
+  margin: 0 auto;
 }
-/* line 8, ../sass/test.scss */
-.a .b {
-  background-color: red;
-  height: 200px;
-  width: 200px;
+/* line 10, ../sass/test.scss */
+body header {
+  width: 100%;
+  padding-top: 58px;
+  text-align: center;
+  border: 1px solid red;
 }
-/* line 12, ../sass/test.scss */
-.a .b .c {
-  background-color: yellow;
+/* line 16, ../sass/test.scss */
+body nav {
+  width: 100%;
+  border: 1px solid red;
+}
+/* line 19, ../sass/test.scss */
+body nav ul {
+  text-align: center;
+  border: 1px solid red;
+}
+/* line 22, ../sass/test.scss */
+body nav ul li {
+  display: inline-block;
+  border: 1px solid red;
+}
+/* line 29, ../sass/test.scss */
+body section section {
+  width: 79%;
+  display: inline-block;
   height: 100px;
-  width: 200px;
+  border: 1px solid red;
+  text-align: center;
+}
+/* line 36, ../sass/test.scss */
+body section nav {
+  width: 20%;
+  display: inline-block;
+  height: 100px;
+  text-align: center;
+}
+/* line 41, ../sass/test.scss */
+body section nav ul {
+  margin: 3px;
+  text-align: center;
+  border: 1px solid red;
+}
+/* line 45, ../sass/test.scss */
+body section nav ul li {
+  display: block;
+  border: 1px solid red;
+}
+/* line 52, ../sass/test.scss */
+body footer {
+  width: 100%;
+  height: 100px;
+  border: 1px solid red;
+  text-align: center;
 }
