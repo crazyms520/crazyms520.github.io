@@ -1,0 +1,18 @@
+/* line 2, ../sass/test.scss */
+.a {
+  background-color: blue;
+  height: 300px;
+  width: 200px;
+}
+/* line 6, ../sass/test.scss */
+.a .b {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+/* line 10, ../sass/test.scss */
+.a .b .c {
+  background-color: yellow;
+  height: 100px;
+  width: 200px;
+}
