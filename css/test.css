@@ -69,7 +69,6 @@ body {
   background-color: #FFFFFF;
   width: 80%;
   height: 100%;
-  border: 1px solid red;
 }
 /* line 11, ../sass/test.scss */
 body #header {
@@ -119,9 +118,8 @@ body #header #nav1 ul li:active {
 }
 /* line 51, ../sass/test.scss */
 body #section1 {
-  margin: 10px;
+  margin-top: 30px;
   width: 100%;
-  border: 1px solid red;
   *zoom: 1;
 }
 /* line 56, ../sass/test.scss */
@@ -134,31 +132,63 @@ body #section1:after {
 /* line 62, ../sass/test.scss */
 body #section1 #section2 {
   display: inline-block;
-  width: 79%;
+  width: 80%;
   height: 100%;
   float: left;
   text-align: center;
-  border: 1px solid red;
 }
-/* line 72, ../sass/test.scss */
+/* line 69, ../sass/test.scss */
+body #section1 #section2 .post {
+  margin: 10px;
+}
+/* line 71, ../sass/test.scss */
+body #section1 #section2 .post h1 {
+  text-align: left;
+  font-size: 25px;
+}
+/* line 77, ../sass/test.scss */
 body #section1 #nav2 {
   width: 20%;
   display: inline-block;
   height: 100%;
   float: left;
-  border: 1px solid red;
-}
-/* line 79, ../sass/test.scss */
-body #section1 #nav2 ul {
-  text-align: center;
-  border: 1px solid red;
 }
 /* line 82, ../sass/test.scss */
-body #section1 #nav2 ul li {
-  display: block;
-  border: 1px solid red;
+body #section1 #nav2 ul {
+  text-align: center;
 }
-/* line 90, ../sass/test.scss */
+/* line 85, ../sass/test.scss */
+body #section1 #nav2 ul li {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 80%;
+  text-align: left;
+  overflow: hidden;
+}
+/* line 92, ../sass/test.scss */
+body #section1 #nav2 ul li input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+}
+/* line 99, ../sass/test.scss */
+body #section1 #nav2 ul #sort {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E1E1E1;
+}
+/* line 103, ../sass/test.scss */
+body #section1 #nav2 ul #tag {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E1E1E1;
+}
+/* line 107, ../sass/test.scss */
+body #section1 #nav2 ul #news {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E1E1E1;
+}
+/* line 116, ../sass/test.scss */
 body #footer {
   width: 100%;
   height: 100px;
