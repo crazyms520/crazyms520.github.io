@@ -139,25 +139,44 @@ body #section1 #section2 {
 }
 /* line 69, ../sass/test.scss */
 body #section1 #section2 .post {
+  position: relative;
   margin: 10px;
 }
-/* line 71, ../sass/test.scss */
+/* line 74, ../sass/test.scss */
 body #section1 #section2 .post h1 {
   text-align: left;
   font-size: 25px;
 }
-/* line 77, ../sass/test.scss */
+/* line 78, ../sass/test.scss */
+body #section1 #section2 .post a {
+  text-decoration: none;
+  color: black;
+}
+/* line 81, ../sass/test.scss */
+body #section1 #section2 .post a:hover {
+  color: #E1E1E1;
+}
+/* line 85, ../sass/test.scss */
+body #section1 #section2 .post button {
+  border: 0;
+  border-radius: 4px;
+  background-color: #E1E1E1;
+  position: relative;
+  right: 100px;
+  top: 0;
+}
+/* line 95, ../sass/test.scss */
 body #section1 #nav2 {
   width: 20%;
   display: inline-block;
   height: 100%;
   float: left;
 }
-/* line 82, ../sass/test.scss */
+/* line 100, ../sass/test.scss */
 body #section1 #nav2 ul {
   text-align: center;
 }
-/* line 85, ../sass/test.scss */
+/* line 103, ../sass/test.scss */
 body #section1 #nav2 ul li {
   display: inline-block;
   margin: 10px auto;
@@ -166,32 +185,33 @@ body #section1 #nav2 ul li {
   text-align: left;
   overflow: hidden;
 }
-/* line 92, ../sass/test.scss */
+/* line 110, ../sass/test.scss */
 body #section1 #nav2 ul li input[type="text"] {
   width: 100%;
   height: 30px;
   border: 1px solid #E1E1E1;
   border-radius: 5px;
 }
-/* line 99, ../sass/test.scss */
+/* line 117, ../sass/test.scss */
 body #section1 #nav2 ul #sort {
   padding-bottom: 10px;
   border-bottom: 1px solid #E1E1E1;
 }
-/* line 103, ../sass/test.scss */
+/* line 121, ../sass/test.scss */
 body #section1 #nav2 ul #tag {
   padding-bottom: 10px;
   border-bottom: 1px solid #E1E1E1;
 }
-/* line 107, ../sass/test.scss */
+/* line 125, ../sass/test.scss */
 body #section1 #nav2 ul #news {
   padding-bottom: 10px;
   border-bottom: 1px solid #E1E1E1;
 }
-/* line 116, ../sass/test.scss */
+/* line 134, ../sass/test.scss */
 body #footer {
   width: 100%;
   height: 100px;
   border: 1px solid red;
   text-align: center;
+  margin: 10px;
 }

@@ -67,10 +67,28 @@ body{
 			text-align: center;
 			// border:1px solid red;
 			.post{
+				position: relative;
 				margin:10px;
+				// width:100%;
+				// height:100%;
 				h1{
 					text-align: left;
 					font-size: 25px;
+				}
+				a{
+					text-decoration: none;
+					color: black;
+					&:hover{
+						color: #E1E1E1;
+					}
+				}
+				button{
+					border:0;
+					border-radius: 4px;
+					background-color: #E1E1E1;
+					position: relative;
+					right: 100px;
+					top:0;
 				}
 			}
 		}
@@ -118,5 +136,6 @@ body{
 		height:100px;
 		border:1px solid red;
 		text-align: center;
+		margin: 10px;
 	}
 }
