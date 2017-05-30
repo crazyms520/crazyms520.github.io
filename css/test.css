@@ -1,4 +1,5 @@
-/* line 5, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+@charset "UTF-8";
+/* line 5, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,199 +21,162 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 5, ../sass/test.scss */
 body {
-  margin: 10px auto;
-  background-color: #FFFFFF;
-  width: 80%;
-  height: 100%;
+  background-color: white;
+  font-family: "Noto Serif CJK SC", "Source Han Serif SC", "‘Source Han Serif’", "source-han-serif-sc", "宋体", serif;
+  font-weight: bold;
+  width: 100%;
+  color: #4e4e4e;
 }
 /* line 11, ../sass/test.scss */
-body #header {
+body header {
+  border-bottom: 1px solid #dddddd;
   margin: 0 auto;
-  padding-top: 20px;
-  z-index: -1;
+  max-width: 1030px;
   width: 100%;
-  height: 50%;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1;
-  font-size: 40px;
-}
-/* line 20, ../sass/test.scss */
-body #header > p {
-  width: 40%;
-}
-/* line 23, ../sass/test.scss */
-body #header p#subtitle {
-  font-size: 20px;
-}
-/* line 26, ../sass/test.scss */
-body #header #nav1 {
+  padding-top: 60px;
   position: relative;
+}
+/* line 18, ../sass/test.scss */
+body header .site-name {
   width: 100%;
+  margin-bottom: 20px;
+}
+/* line 21, ../sass/test.scss */
+body header .site-name .hidden {
+  display: none;
+}
+/* line 24, ../sass/test.scss */
+body header .site-name #logo {
+  color: #555555;
+  font-size: 40px;
+  text-decoration: none;
 }
 /* line 29, ../sass/test.scss */
-body #header #nav1 ul {
+body header .site-name .description {
+  margin-top: 2px;
+  font-size: 25px;
+  color: #999999;
+}
+/* line 35, ../sass/test.scss */
+body header nav {
+  margin-bottom: -1px;
   text-align: right;
 }
-/* line 31, ../sass/test.scss */
-body #header #nav1 ul li {
-  display: inline;
-  margin-right: 10px;
-  padding: 10px 10px 0 10px;
-  border-radius: 2px;
-  font-size: 20px;
+/* line 38, ../sass/test.scss */
+body header nav .current {
+  border: 1px solid #dddddd;
+  border-bottom: 1px solid white;
+  border-radius: 3px;
 }
-/* line 37, ../sass/test.scss */
-body #header #nav1 ul li:hover {
+/* line 42, ../sass/test.scss */
+body header nav .current:hover {
+  border-bottom: 1px solid white;
+}
+/* line 46, ../sass/test.scss */
+body header nav a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 3px 20px 3px;
+  border: 1px solid transparent;
+}
+/* line 54, ../sass/test.scss */
+body header nav a:hover {
   border-bottom: 1px solid black;
 }
-/* line 40, ../sass/test.scss */
-body #header #nav1 ul li:active {
-  border: 1px solid #E1E1E1;
-  border-bottom: 1px solid white;
-  z-index: 10;
-}
-/* line 53, ../sass/test.scss */
-body #section1 {
-  margin-top: 30px;
+/* line 60, ../sass/test.scss */
+body .container {
+  display: flex;
+  margin: 0 auto;
   width: 100%;
-  *zoom: 1;
+  max-width: 1030px;
 }
-/* line 58, ../sass/test.scss */
-body #section1:after {
-  content: " ";
-  line-height: 0;
-  display: table;
-  clear: both;
+/* line 65, ../sass/test.scss */
+body .container .left {
+  flex: 4;
+  padding-top: 20px;
+  padding-right: 30px;
+  letter-spacing: 2px;
+  line-height: 20px;
 }
-/* line 64, ../sass/test.scss */
-body #section1 #section2 {
-  display: inline-block;
-  width: 80%;
-  height: 100%;
-  float: left;
-  text-align: center;
+/* line 72, ../sass/test.scss */
+body .container .left .content .post {
+  padding-top: 20px;
 }
-/* line 71, ../sass/test.scss */
-body #section1 #section2 .post {
-  position: relative;
-  margin: 10px;
-  height: 100%;
+/* line 75, ../sass/test.scss */
+body .container .left .content .post h3 {
+  font-size: 20px;
 }
-/* line 76, ../sass/test.scss */
-body #section1 #section2 .post h1 {
-  text-align: left;
-  font-size: 25px;
+/* line 78, ../sass/test.scss */
+body .container .left .content .post p {
+  padding: 10px 0;
 }
-/* line 80, ../sass/test.scss */
-body #section1 #section2 .post a {
+/* line 81, ../sass/test.scss */
+body .container .left .content .post a {
+  padding: 5px 5px;
   text-decoration: none;
-  color: black;
-}
-/* line 83, ../sass/test.scss */
-body #section1 #section2 .post a:hover {
-  color: #E1E1E1;
-}
-/* line 87, ../sass/test.scss */
-body #section1 #section2 .post button {
-  border: 0;
+  color: #555555;
+  border: 1px solid #555555;
   border-radius: 4px;
-  background-color: #E1E1E1;
-  position: relative;
-  right: -45%;
-  top: 100%;
 }
-/* line 97, ../sass/test.scss */
-body #section1 #nav2 {
-  width: 20%;
-  display: inline-block;
-  height: 100%;
-  float: left;
+/* line 91, ../sass/test.scss */
+body .container .right {
+  flex: 1;
+  margin-top: 30px;
+  padding-left: 20px;
+  border-left: 1px solid #dddddd;
 }
-/* line 102, ../sass/test.scss */
-body #section1 #nav2 ul {
-  text-align: center;
-}
-/* line 105, ../sass/test.scss */
-body #section1 #nav2 ul li {
-  display: inline-block;
-  margin: 10px auto;
-  padding: 5px;
-  width: 80%;
-  text-align: left;
-  overflow: hidden;
-}
-/* line 112, ../sass/test.scss */
-body #section1 #nav2 ul li input[type="text"] {
+/* line 99, ../sass/test.scss */
+body footer {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
   width: 100%;
-  height: 30px;
-  border: 1px solid #E1E1E1;
-  border-radius: 5px;
-}
-/* line 119, ../sass/test.scss */
-body #section1 #nav2 ul #sort {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #E1E1E1;
-}
-/* line 123, ../sass/test.scss */
-body #section1 #nav2 ul #tag {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #E1E1E1;
-}
-/* line 127, ../sass/test.scss */
-body #section1 #nav2 ul #news {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #E1E1E1;
-}
-/* line 136, ../sass/test.scss */
-body #footer {
-  width: 100%;
-  height: 100px;
-  border: 1px solid red;
-  text-align: center;
-  margin: 10px;
+  max-width: 1030px;
 }

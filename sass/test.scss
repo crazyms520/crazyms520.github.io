@@ -1,143 +1,106 @@
 @import "compass/reset";
 
-$width:80%;
+$width: 1030px;
 
 body{
-	margin: 10px auto;
-	background-color: #FFFFFF;
-	width:$width;
-	height: 100%;
-	// border:1px solid red;
-	#header{
+	background-color: rgba(255, 255, 255, 1.00);	
+	font-family: "Noto Serif CJK SC", "Source Han Serif SC", "‘Source Han Serif’", "source-han-serif-sc", "宋体", serif;
+	font-weight: bold;
+	width: 100%;
+	color: rgba(78, 78, 78, 1.00);
+	header{
+		border-bottom: 1px solid rgba(221, 221, 221, 1.00);
 		margin: 0 auto;
-		padding-top: 20px;
-		z-index: -1;
+		max-width: $width;		
+		width:100%;
+		padding-top: 60px;
+		position: relative;
+		.site-name{
+			width: 100%;
+			margin-bottom:20px;
+			.hidden{
+				display: none;
+			}
+			#logo{
+				color: rgba(85, 85, 85, 1.00);
+				font-size: 40px;
+				text-decoration: none;
+			}
+			.description{
+				margin-top: 2px;
+				font-size: 25px;
+				color: rgba(153, 153, 153, 1.00);
+			}
+		}
+		nav{
+			margin-bottom: -1px;						
+			text-align: right;
+			.current{
+				border: 1px solid rgba(221, 221, 221, 1.00);
+				border-bottom: 1px solid rgba(255, 255, 255, 1.00);
+				border-radius: 3px;
+				&:hover{
+					border-bottom: 1px solid rgba(255, 255, 255, 1.00);
+				}
+			}
+			a{
+				display:inline-block;
+				font-size: 16px;
+				line-height: 30px;
+				text-decoration: none;
+				padding: 3px 20px 3px;
+				border: 1px solid transparent;
+			}
+			a:hover{
+				border-bottom: 1px solid black;
+			}
+		}
+	}
+
+	.container{
+		display: flex;
+		margin: 0 auto;
 		width: 100%;
-		height: 50%;
-		text-align: left;
-		border-bottom: 1px solid #E1E1E1;
-		font-size: 40px;
-		& > p{
-			width: 40%;
-		}
-		p#subtitle{
-			font-size: 20px;
-		}
-		#nav1{
-			position: relative;
-			width:100%;
-			ul{
-				text-align: right;
-				li{
-					display: inline;
-					margin-right: 10px;
-					padding: 10px 10px 0 10px;
-					border-radius: 2px;
-					font-size: 20px;
-					&:hover{
-						border-bottom: 1px solid black;
+		max-width: $width;
+		.left{
+			flex: 4;
+			padding-top: 20px;
+			padding-right: 30px;
+			letter-spacing: 2px;
+			line-height: 20px;
+			.content{
+				.post{
+					
+					padding-top: 20px;
+					h3{
+						font-size: 20px;
 					}
-					&:active{
-						// padding-top: 2px;
-						border: 1px solid #E1E1E1;
-						border-bottom: 1px solid white;
-						z-index: 10;
-
+					p{
+						padding: 10px 0;
+					}
+					a{
+						padding: 5px 5px;
+						text-decoration: none;
+						color: rgba(85, 85, 85, 1.00);
+						border: 1px solid rgba(85, 85, 85, 1.00);
+						border-radius: 4px;
 					}
 				}
-
 			}
+		}
+		.right{
+			flex: 1;
+			margin-top: 30px;
+			padding-left: 20px;
+			border-left: 1px solid rgba(221, 221, 221, 1.00);
 		}
 	}
 
-	#section1{
-		margin-top: 30px;
-		width:100%;
-		// border:1px solid red;
-		*zoom: 1;
-		&:after{
-			content: " ";
-			line-height: 0;
-			display: table;
-			clear: both;
-		}
-		#section2{
-			display:inline-block;
-			width:80%;
-			height:100%;
-			float: left;
-			text-align: center;
-			// border:1px solid red;
-			.post{
-				position: relative;
-				margin:10px;
-				// width:100%;
-				height:100%;
-				h1{
-					text-align: left;
-					font-size: 25px;
-				}
-				a{
-					text-decoration: none;
-					color: black;
-					&:hover{
-						color: #E1E1E1;
-					}
-				}
-				button{
-					border:0;
-					border-radius: 4px;
-					background-color: #E1E1E1;
-					position: relative;;;
-					right: -45%;
-					top:100%;
-				}
-			}
-		}
-		#nav2{
-			width:20%;
-			display:inline-block;
-			height:100%;
-			float: left;
-			ul{
-				text-align: center;
-				// border:1px solid red;
-				li{
-					display:inline-block;;
-					margin: 10px auto;
-					padding: 5px;
-					width:80%;
-					text-align: left;
-					overflow: hidden;
-					input[type="text"]{
-						width:100%;
-						height:30px;
-						border: 1px solid #E1E1E1;
-						border-radius: 5px;
-					}
-				}
-				#sort{
-					padding-bottom: 10px;
-					border-bottom: 1px solid #E1E1E1;
-				}
-				#tag{
-					padding-bottom: 10px;
-					border-bottom: 1px solid #E1E1E1;
-				}
-				#news{
-					padding-bottom: 10px;
-					border-bottom: 1px solid #E1E1E1;
-				}
-			}
-
-		}
-	}
-
-	#footer{
-		width:100%;
-		height:100px;
-		border:1px solid red;
-		text-align: center;
-		margin: 10px;
+	footer{
+		margin: 0 auto;
+		margin-top: 20px;
+		padding: 20px;
+		width: 100%;
+		max-width: $width;
 	}
 }
