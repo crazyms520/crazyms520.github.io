@@ -1,4 +1,53 @@
 @import "compass/reset";
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icon/fonts/icomoon.eot?cnmaim');
+  src:  url('../icon/fonts/icomoon.eot?cnmaim#iefix') format('embedded-opentype'),
+    url('../icon/fonts/icomoon.ttf?cnmaim') format('truetype'),
+    url('../icon/fonts/icomoon.woff?cnmaim') format('woff'),
+    url('../icon/fonts/icomoon.svg?cnmaim#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar2:before {
+  content: "\e903";
+  padding-right: 5px;
+}
+.icon-external-link:before {
+  content: "\e902";
+  padding-right: 5px;
+}
+.icon-folder:before {
+  content: "\e901";
+  padding-right: 5px;
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+  padding-right: 5px;
+}
+.icon-file-empty:before {
+  content: "\e924";
+  padding-right: 5px;
+}
 
 $width: 1030px;
 
@@ -92,7 +141,71 @@ body{
 			flex: 1;
 			margin-top: 30px;
 			padding-left: 20px;
+			position: relative;
 			border-left: 1px solid rgba(221, 221, 221, 1.00);
+			.sidebar{
+				.search{
+					margin-bottom: 30px ;
+					input{
+						text-indent: 20px;
+						padding: 5px 10px;
+						border-radius: 5px;
+						border: 1px solid rgba(187, 187, 187, 1.00);
+					}
+					.icon-search{
+						position: absolute;
+						top: 5px;
+						left: 25px;
+					}
+				}
+				.sort{
+					margin-bottom: 30px;
+					.title{
+						padding-bottom: 10px;
+						border-bottom: 1px solid rgba(187, 187, 187, 1.00);
+					}
+					ul li{
+						padding-top: 20px;
+					}
+				}
+				.label{
+					margin-bottom: 30px;
+					.title{
+						padding-bottom: 10px;
+						border-bottom: 1px solid rgba(187, 187, 187, 1.00);
+					}
+					a{
+						display: inline-block;
+						text-decoration: none;
+					}
+				}
+				.recent{
+					margin-bottom: 30px;
+					.title{
+						padding-bottom: 10px;
+						border-bottom: 1px solid rgba(187, 187, 187, 1.00);
+					}
+					ul li {
+						padding-top: 10px;
+						a{
+							text-decoration: none;
+						}
+					}
+				}
+				.link{
+					margin-bottom: 30px;
+					.title{
+						padding-bottom: 10px;
+						border-bottom: 1px solid rgba(187, 187, 187, 1.00);
+					}
+					ul li {
+						padding-top: 10px;
+						a{
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}
 	}
 
